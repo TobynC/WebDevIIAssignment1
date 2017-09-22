@@ -44,9 +44,7 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
     <body>
         <?php include ('header.php'); ?>
     <main>
-        <div style="display: flex; flex-wrap: wrap;">
-            <?php display_items($allItems) ?>
-        </div>
+        <?php display_items($allItems) ?>
     </main>
         <?php include ('footer.php')?>
     </body>

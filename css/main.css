@@ -29,6 +29,8 @@ h3{
 main{
     max-width:1000px;
     margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header{
