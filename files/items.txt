@@ -1,0 +1,40 @@
+AMD RYZEN Threadripper 1950X 16-Core /32 Threads 3.4 GHz Desktop Processor
+CPU
+20
+999.99
+images/threadripper.jpg
+GIGABYTE X399 AORUS Gaming 7 AMD X399 ATX 3 M.2 4-Way SLI AMD Motherboard
+Motherboard
+3
+389.99
+images/13-145-030-V06.jpg
+AMD RYZEN Threadripper 1900X 8-Core /16 Threads 3.8 GHz Desktop Processor
+CPU
+12
+549.99
+images/threadripper.jpg
+ASUS ROG ZENITH EXTREME AMD Extended ATX AMD Motherboard
+Motherboard
+2
+549.99
+images/13-119-003-V01.jpg
+G.SKILL TridentZ RGB Series 32GB (4 x 8GB) 288-Pin DDR4 SDRAM DDR4 3600 (PC4 28800)
+RAM
+8
+406.99
+images/20-232-484-V01.jpg
+G.SKILL Ripjaws V Series 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 2400 (PC4 19200) Intel Z170
+RAM
+3
+152.99
+images/20-232-174-01.jpg
+MSI GeForce GTX 1080 Ti FE DirectX 12 GTX 1080 Ti Founders Edition 11GB Video Card
+GPU
+0
+1,099.99
+images/14-137-104-S99.jpg
+AMD Radeon Vega Frontier Edition DirectX 12 16GB 2048-Bit Video Card
+GPU
+4
+999.99
+images/14-105-073-Z01.jpg
