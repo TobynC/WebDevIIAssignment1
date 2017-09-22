@@ -17,6 +17,7 @@
             }
         }
         fclose($itemList);
+        usort($allItems, 'type_compare');
 
         return $allItems;
     }
@@ -42,7 +43,6 @@
 
         fclose($itemList);
     }
-
     function add_item($newItem, $param, &$allItems){
         //add new item
         if($param === null){
@@ -56,22 +56,34 @@
         }
     }
 
-    function display_items(){
-        $allItems = read_file();
+    function display_items(&$allItems){
         //perform sort before each table load in case of modifications
-        usort($allItems, 'type_compare');
 
         for($i = 0; $i < sizeof($allItems); $i++){
-            //use TEXT
-            echo <<<EOT
-           <article>
-                <img src="{$allItems[$i]['imageLocation']}" alt="{$allItems[$i]['name']}">
-                <section>
-                    {$allItems[$i]['name']}
-                    <section>\${$allItems[$i]['price']}</section>                    
-                </section>
-           </article>
-EOT;
+            $button = $allItems[$i]['quantity'] > 0 ? "<input class='add-to-cart' type='submit' value='Add to cart' >"
+                : "<label class='out-of-stock'>OUT OF STOCK</label>";
+            $quantityMax = (int)$allItems[$i]['quantity'];
+            $quantityPicker = $quantityMax > 0 ? "<input style='display: inline-block' type='number' name='purchaseQuantity' min='1' max='{$quantityMax}'>" : "";
+
+            //use heredoc
+            echo <<<HTML
+           
+                <article style="flex-grow: 1; flex-wrap: wrap; max-width: 200px;">
+                    <form action="." method="post">
+                        <img src="{$allItems[$i]['imageLocation']}" alt="{$allItems[$i]['name']}">
+                        <section>
+                            {$allItems[$i]['name']}
+                            <section>
+                            \${$allItems[$i]['price']}
+                                <section>{$allItems[$i]['quantity']} in stock</section>
+                            </section>    
+                            <input type="hidden" name="index" value="{$i}">
+                            {$quantityPicker}
+                            {$button}
+                        </section>                        
+                    </form>                    
+                </article>                        
+HTML;
         }
     }
 

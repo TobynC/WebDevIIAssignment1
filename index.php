@@ -1,6 +1,34 @@
 <?php
 session_start();
 require_once('functions.php');
+
+$allItems = read_file();
+if(!isset($_SESSION['allItems']))
+    $_SESSION['allItems'] = $allItems;
+
+if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
+    $index = filter_input(INPUT_POST, 'index', FILTER_VALIDATE_INT);
+    $purchasedQuantity = filter_input(INPUT_POST, 'purchaseQuantity', FILTER_VALIDATE_INT);
+    $addedItem = $allItems[$index];
+
+    if(!isset($_SESSION['cart'])){
+        $_SESSION['cart'] = array(
+            array(
+                    'item' => $addedItem,
+                    'purchaseQuantity' => $purchasedQuantity
+            )
+        );
+        echo "<script type='text/javascript'>alert('Item was added to the cart.')</script>";
+    }
+    else{
+        $tampArray = array(
+                'item' => $addedItem,
+                'purchasedQuantity' => $purchasedQuantity
+        );
+        array_push($_SESSION['cart'], $addedItem);
+        echo "<script type='text/javascript'>alert('Item was added to the cart.')</script>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +44,9 @@ require_once('functions.php');
     <body>
         <?php include ('header.php'); ?>
     <main>
-        <?php display_items() ?>
+        <div style="display: flex; flex-wrap: wrap;">
+            <?php display_items($allItems) ?>
+        </div>
     </main>
         <?php include ('footer.php')?>
     </body>
