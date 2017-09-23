@@ -63,10 +63,8 @@
 
         for($i = 0; $i < sizeof($allItems); $i++){
             //filtering
-            if($filter && $filter == in_array($filter, $filterTypes)){
-                if($filter != trim($allItems[$i]['type'])){
-                    continue;
-                }
+            if($filter && $filter == in_array($filter, $filterTypes) && $filter != trim($allItems[$i]['type'])){
+                continue;
             }
 
             //display table
