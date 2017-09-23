@@ -57,10 +57,19 @@
         }
     }
 
-    function display_items(&$allItems){
+    function display_items(&$allItems, $filter){
         //perform sort before each table load in case of modifications
+        $filterTypes = array('CPU', 'RAM', 'Motherboard', 'GPU');
 
         for($i = 0; $i < sizeof($allItems); $i++){
+            //filtering
+            if($filter && $filter == in_array($filter, $filterTypes)){
+                if($filter != trim($allItems[$i]['type'])){
+                    continue;
+                }
+            }
+
+            //display table
             $button = $allItems[$i]['quantity'] > 0 ? "<input class='add-to-cart' type='submit' value='Add to cart' >"
                 : "<label class='out-of-stock'>OUT OF STOCK</label>";
             $quantityMax = (int)$allItems[$i]['quantity'];

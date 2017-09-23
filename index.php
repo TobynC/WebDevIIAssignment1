@@ -30,6 +30,8 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
         echo $cartNotification;
     }
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +47,28 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
     <body>
         <?php include ('header.php'); ?>
     <main>
-        <?php display_items($allItems) ?>
+        <form action="." method="post">
+            <select name="filter">
+                <option value="">Show All</option>
+                <option value="CPU">CPUs</option>
+                <option value="RAM">RAM/Memory</option>
+                <option value="Motherboard">Motherboards</option>
+                <option value="GPU">Graphics Cards</option>
+            </select>
+            <input type="submit" value="Filter">
+        </form>
+        <br>
+        <div class="display-items">
+            <?php
+            if(isset($_POST['filter'])){
+                $filter = htmlspecialchars(filter_input(INPUT_POST, 'filter'));
+                display_items($allItems, $filter);
+            }
+            else{
+                display_items($allItems, "");
+            }
+            ?>
+        </div>
     </main>
         <?php include ('footer.php')?>
     </body>
