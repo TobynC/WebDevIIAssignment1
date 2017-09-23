@@ -1,5 +1,5 @@
 *{
-    font-family: "Segoe UI", Georgia;
+    font-family: "Segoe UI", Georgia, serif;
 }
 
 body{
@@ -135,6 +135,7 @@ article {
     margin: 1rem;
     color: #333;
     background-color: whitesmoke;
+    max-width: 200px;
 }
 
 article > form > img{

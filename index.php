@@ -10,6 +10,7 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
     $index = filter_input(INPUT_POST, 'index', FILTER_VALIDATE_INT);
     $purchasedQuantity = filter_input(INPUT_POST, 'purchaseQuantity', FILTER_VALIDATE_INT);
     $addedItem = $allItems[$index];
+    $cartNotification = "<script type='text/javascript'>alert('Item was added to the cart.')</script>";
 
     if(!isset($_SESSION['cart'])){
         $_SESSION['cart'] = array(
@@ -18,7 +19,7 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
                     'purchaseQuantity' => $purchasedQuantity
             )
         );
-        echo "<script type='text/javascript'>alert('Item was added to the cart.')</script>";
+        echo $cartNotification;
     }
     else{
         $tampArray = array(
@@ -26,7 +27,7 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
                 'purchasedQuantity' => $purchasedQuantity
         );
         array_push($_SESSION['cart'], $addedItem);
-        echo "<script type='text/javascript'>alert('Item was added to the cart.')</script>";
+        echo $cartNotification;
     }
 }
 ?>

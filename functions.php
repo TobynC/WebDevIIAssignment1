@@ -43,6 +43,7 @@
 
         fclose($itemList);
     }
+
     function add_item($newItem, $param, &$allItems){
         //add new item
         if($param === null){
@@ -68,7 +69,7 @@
             //use heredoc
             echo <<<HTML
            
-                <article style="flex-grow: 1; flex-wrap: wrap; max-width: 200px;">
+                <article>
                     <form action="." method="post">
                         <img src="{$allItems[$i]['imageLocation']}" alt="{$allItems[$i]['name']}">
                         <section>
