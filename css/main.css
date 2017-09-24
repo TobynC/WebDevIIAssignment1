@@ -3,7 +3,7 @@
 }
 
 body{
-    max-width: 1200px;
+
     margin: auto;
 }
 
@@ -19,7 +19,7 @@ header > h1{
 }
 
 main{
-    max-width:1000px;
+    /*max-width:1000px;*/
     margin-left: 100px;
 }
 
@@ -32,9 +32,21 @@ input{
     align-content: center;
 }
 
+.sticky-footer{
+    width: 100%;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0 0;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+}
+
 footer{
-    margin-top:20px;
     font-weight: 700;
+    width: 100%; // Visible width of footer
+    margin:auto;
 }
 
 header, footer{
