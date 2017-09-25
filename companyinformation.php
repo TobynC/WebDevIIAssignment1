@@ -12,7 +12,8 @@
 <body>
 <?php include ('header.php'); ?>
 <main>
-    <p>This is the page with the company information on it.</p>
+    <h1>About the Company</h1>
+    <p>Oldegg provides users with the ability to browse and purchase desktop computer components.</p>
 </main>
 <?php include ('footer.php')?>
 </body>

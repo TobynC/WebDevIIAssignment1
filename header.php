@@ -6,5 +6,5 @@
         <li><a href="cart.php"><img class="cart" src="images/empty-cart-light.png" alt="Cart"></a></li>
     </ul>
     <br>
-    <h1>Oldegg Computer Parts</h1>
+    <h1>OLDEGG</h1>
 </header>

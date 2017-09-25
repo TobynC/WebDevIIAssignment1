@@ -12,7 +12,25 @@
 <body>
 <?php include ('header.php'); ?>
 <main>
-    <p>This is the about page</p>
+    <h1>About the website authors</h1>
+    <h3>Tobyn Collinsworth</h3>
+    <p>Created the following:</p>
+    <ul>
+        <li>Main Page/ordering</li>
+        <li>CSS</li>
+        <li>About Page</li>
+        <li>Company Information Page</li>
+        <li>File contents</li>
+        <li>Footer/header</li>
+    </ul>
+    <h3>Randy Musser</h3>
+    <p>Created the following</p>
+    <ul>
+        <li>Cart/order processing</li>
+        <li>Order Summary</li>
+        <li>Cart Editing</li>
+        <li>Quantity updating</li>
+    </ul>
 </main>
 <?php include ('footer.php')?>
 </body>
