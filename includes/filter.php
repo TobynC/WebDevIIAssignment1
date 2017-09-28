@@ -1,4 +1,4 @@
-<form action="." method="post">
+<form action="../" method="post">
     <select name="filter">
         <option value="">Show All</option>
         <option value="CPU">CPUs</option>

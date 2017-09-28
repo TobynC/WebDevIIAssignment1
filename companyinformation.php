@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<?php include ('header.php'); ?>
+<?php include('includes/header.php'); ?>
 <main>
     <h1>About the Company</h1>
     <p>Oldegg provides users with the ability to browse and purchase desktop computer components.</p>
 </main>
-<?php include ('footer.php')?>
+<?php include('includes/footer.php') ?>
 </body>
 </html>

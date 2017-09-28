@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<?php include ('header.php'); ?>
+<?php include('includes/header.php'); ?>
 <main>
     <h1>About the website authors</h1>
     <h3>Tobyn Collinsworth</h3>
@@ -24,7 +24,7 @@
         <li>Footer/header</li>
     </ul>
     <h3>Randy Musser</h3>
-    <p>Created the following</p>
+    <p>Created the following:</p>
     <ul>
         <li>Cart/order processing</li>
         <li>Order Summary</li>
@@ -32,6 +32,6 @@
         <li>Quantity updating</li>
     </ul>
 </main>
-<?php include ('footer.php')?>
+<?php include('includes/footer.php') ?>
 </body>
 </html>

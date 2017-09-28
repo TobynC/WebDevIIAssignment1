@@ -31,7 +31,6 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
     }
 }
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,9 +44,9 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <?php include ('header.php'); ?>
+        <?php include('includes/header.php'); ?>
     <main>
-        <?php include ('filter.php') ?>
+        <?php include('includes/filter.php') ?>
         <?php
             $filterName = null;
             if(isset($_POST['filter']))
@@ -68,6 +67,6 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
             ?>
         </div>
     </main>
-        <?php include ('footer.php')?>
+        <?php include('includes/footer.php') ?>
     </body>
 </html>
