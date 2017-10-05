@@ -100,3 +100,21 @@ HTML;
             return 0;
         return ($a['type'] < $b['type']) ? -1 : 1;
     }
+
+    function displayCart($cart){
+        //iterate through cart
+        for($i=0; $i<count($cart); $i++){
+            //contains item and purchase quantity
+
+            //save item for ease of use
+            $item = $cart[$i]['item'];
+
+            //printing out name
+            echo $item['name'];
+            //creating img
+            echo "<img src='{$item['imageLocation']}' alt='{$item['name']}' style='max-width: 200px;'>";
+
+            //printing out purchase quantity
+            echo $cart[$i]['purchaseQuantity'];
+        }
+    }

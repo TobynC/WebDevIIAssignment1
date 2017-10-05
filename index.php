@@ -22,11 +22,11 @@ if (isset($_POST['purchaseQuantity']) && isset($_POST['index'])){
         echo $cartNotification;
     }
     else{
-        $tampArray = array(
+        $tempArray = array(
                 'item' => $addedItem,
-                'purchasedQuantity' => $purchasedQuantity
+                'purchaseQuantity' => $purchasedQuantity
         );
-        array_push($_SESSION['cart'], $addedItem);
+        array_push($_SESSION['cart'], $tempArray);
         echo $cartNotification;
     }
 }
