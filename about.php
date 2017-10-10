@@ -22,11 +22,12 @@
         <li>Company Information Page</li>
         <li>File contents</li>
         <li>Footer/header</li>
+        <li>Filtering</li>
+        <li>Cart/order processing</li>
     </ul>
     <h3>Randy Musser</h3>
     <p>Created the following:</p>
     <ul>
-        <li>Cart/order processing</li>
         <li>Order Summary</li>
         <li>Cart Editing</li>
         <li>Quantity updating</li>

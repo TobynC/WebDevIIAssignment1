@@ -1,53 +1,18 @@
-AMD RYZEN Threadripper 1950X 16-Core /32 Threads 3.4 GHz Desktop Processor
-CPU
-20
-999.99
-images/threadripper.jpg
-GIGABYTE X399 AORUS Gaming 7 AMD X399 ATX 3 M.2 4-Way SLI AMD Motherboard
-Motherboard
-3
-389.99
-images/13-145-030-V06.jpg
 AMD RYZEN Threadripper 1900X 8-Core /16 Threads 3.8 GHz Desktop Processor
 CPU
 12
 549.99
 images/threadripper.jpg
-ASUS ROG ZENITH EXTREME AMD Extended ATX AMD Motherboard
-Motherboard
-2
-549.99
-images/13-119-003-V01.jpg
-G.SKILL TridentZ RGB Series 32GB (4 x 8GB) 288-Pin DDR4 SDRAM DDR4 3600 (PC4 28800)
-RAM
-8
-406.99
-images/20-232-484-V01.jpg
-G.SKILL Ripjaws V Series 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 2400 (PC4 19200) Intel Z170
-RAM
-3
-152.99
-images/20-232-174-01.jpg
-MSI GeForce GTX 1080 Ti FE DirectX 12 GTX 1080 Ti Founders Edition 11GB Video Card
-GPU
-0
-1,099.99
-images/14-137-104-S99.jpg
-AMD Radeon Vega Frontier Edition DirectX 12 16GB 2048-Bit Video Card
-GPU
-4
-999.99
-images/14-105-073-Z01.jpg
-Intel Core i9-7900X Skylake-X 10-Core 3.3 GHz LGA 2066 140W BX80673I97900X
-CPU
-11
-969.99
-images/19-117-795-S05.jpg
 Intel Core i9-7920X Skylake X 12-Core 2.9 GHz LGA 2066 140W BX80673I97920X
 CPU
 11
 1199.99
 images/19-117-795-S05.jpg
+AMD RYZEN Threadripper 1950X 16-Core /32 Threads 3.4 GHz Desktop Processor
+CPU
+20
+999.99
+images/threadripper.jpg
 Intel Core i7-7700K Kaby Lake Quad-Core 4.2 GHz LGA 1151 91W BX80677I77700K
 CPU
 19
@@ -58,33 +23,68 @@ CPU
 20
 219.99
 images/19-117-728-Z01.jpg
-ASUS ROG MAXIMUS IX APEX LGA 1151 Intel Z270 HDMI SATA 6Gb/s USB 3.1 Extended ATX
-Motherboard
-3
-248.99
-images/13-132-953-V01.jpg
-GIGABYTE G1 Gaming GA-Z170X-Gaming 5 (rev. 1.0) LGA 1151 Intel Z170 HDMI SATA 6Gb/s USB 3.1
-Motherboard
-5
-109.99
-images/13-128-836-02.jpg
-Team T-Force DARK 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 2400 (PC4 19200) Memory
-RAM
-0
-140.99
-images/20-313-795-01.jpg
-HyperX Fury 8GB (2 x 4GB) DDR4 2400MHz DRAM (Desktop Memory) CL15 1.2V DIMM (288-pin)
-RAM
-2
-84.99
-images/20-104-567-01.jpg
-EVGA GeForce GTX 1070 SC GAMING ACX 3.0, 08G-P4-6173-KR, 8GB GDDR5, LED
-GPU
+Intel Core i9-7900X Skylake-X 10-Core 3.3 GHz LGA 2066 140W BX80673I97900X
+CPU
 11
-485.64
-images/14-487-248-S99.jpg
+969.99
+images/19-117-795-S05.jpg
 EVGA GeForce GTX 1060 SC GAMING, ACX 2.0 (Single Fan), 06G-P4-6163-KR, 6GB GDDR5, DX12
 GPU
 14
 269.99
 images/14-487-261-S99.jpg
+EVGA GeForce GTX 1070 SC GAMING ACX 3.0, 08G-P4-6173-KR, 8GB GDDR5, LED
+GPU
+11
+485.64
+images/14-487-248-S99.jpg
+AMD Radeon Vega Frontier Edition DirectX 12 16GB 2048-Bit Video Card
+GPU
+4
+999.99
+images/14-105-073-Z01.jpg
+MSI GeForce GTX 1080 Ti FE DirectX 12 GTX 1080 Ti Founders Edition 11GB Video Card
+GPU
+0
+1,099.99
+images/14-137-104-S99.jpg
+GIGABYTE G1 Gaming GA-Z170X-Gaming 5 (rev. 1.0) LGA 1151 Intel Z170 HDMI SATA 6Gb/s USB 3.1
+Motherboard
+5
+109.99
+images/13-128-836-02.jpg
+ASUS ROG MAXIMUS IX APEX LGA 1151 Intel Z270 HDMI SATA 6Gb/s USB 3.1 Extended ATX
+Motherboard
+3
+248.99
+images/13-132-953-V01.jpg
+GIGABYTE X399 AORUS Gaming 7 AMD X399 ATX 3 M.2 4-Way SLI AMD Motherboard
+Motherboard
+3
+389.99
+images/13-145-030-V06.jpg
+ASUS ROG ZENITH EXTREME AMD Extended ATX AMD Motherboard
+Motherboard
+2
+549.99
+images/13-119-003-V01.jpg
+HyperX Fury 8GB (2 x 4GB) DDR4 2400MHz DRAM (Desktop Memory) CL15 1.2V DIMM (288-pin)
+RAM
+2
+84.99
+images/20-104-567-01.jpg
+Team T-Force DARK 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 2400 (PC4 19200) Memory
+RAM
+0
+140.99
+images/20-313-795-01.jpg
+G.SKILL Ripjaws V Series 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 2400 (PC4 19200) Intel Z170
+RAM
+3
+152.99
+images/20-232-174-01.jpg
+G.SKILL TridentZ RGB Series 32GB (4 x 8GB) 288-Pin DDR4 SDRAM DDR4 3600 (PC4 28800)
+RAM
+8
+406.99
+images/20-232-484-V01.jpg

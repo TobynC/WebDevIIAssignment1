@@ -225,6 +225,11 @@ header > ul > li:nth-child(4) > a:hover{
     background-color: #333;
 }
 
+.about-the-company{
+    font-size: x-large;
+    max-width: 50%;
+}
+
 .cart{
     width: 30px;
     height: 30px;
@@ -235,4 +240,41 @@ header > ul > li:nth-child(4) > a:hover{
 .out-of-stock{
     color: red;
     float: right;
+}
+
+table{
+    width: 50%;
+}
+
+thead{
+    background-color: #333;
+    color: white;
+}
+
+tbody{
+    text-align: center;
+}
+
+table {
+    border: 2px solid black;
+    border-spacing: 0;
+}
+
+th, tr, td {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0;
+}
+
+td > input[type=submit]{
+    margin: auto;
+}
+
+.cart-image{
+    max-width: 100px;
+}
+
+.remove-from-cart{
+    background: indianred !important;
+    color: black !important;
 }

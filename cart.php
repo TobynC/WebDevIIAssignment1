@@ -1,8 +1,17 @@
 <?php
 session_start();
 require_once('functions.php');
+
+if(!isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+}
 $cart = $_SESSION['cart'];
 
+if (isset($_POST['remove'])){
+    $index = $_POST['remove'];
+    delete_item($index, $cart);
+    $_SESSION['cart'] = $cart;
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,15 +26,24 @@ $cart = $_SESSION['cart'];
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<?php include ('includes/header.php'); ?>
-<?php
-displayCart($cart);
-?>
-
-<form action='confirm.php' method=post>
-    <input type='submit' value='Confirm'>
-
-</form>
+    <?php include ('includes/header.php'); ?>
+<main>
+    <?php
+    displayCart($cart);
+    ?>
+    <?php
+        if(count($cart))
+        {
+          echo "
+            <form action='confirm.php' method=post>
+                <input type='submit' value='Confirm'>
+            </form>";
+        }
+        else{
+            echo "<h2>There's nothing in here yet.</h2>";
+        }
+    ?>
+</main>
 <?php include ('includes/footer.php')?>
 </body>
 </html>

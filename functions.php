@@ -57,6 +57,14 @@
         }
     }
 
+    function delete_item($index, &$allItems){
+        //delete item
+        unset($allItems[(int)$index]);
+
+        //reindex
+        $allItems = array_values($allItems);
+    }
+
     function display_items(&$allItems, $filter){
         //perform sort before each table load in case of modifications
         $filterTypes = array('CPU', 'RAM', 'Motherboard', 'GPU');
@@ -101,20 +109,43 @@ HTML;
         return ($a['type'] < $b['type']) ? -1 : 1;
     }
 
-    function displayCart($cart){
+    function updateInventory($allItems, $cart){
+        for($i = 0; $i < count($allItems); $i++)
+        {
+            for($j=0; $j<count($cart); $j++){
+                if($allItems[$i]['name'] === $cart[$j]['item']['name']){
+                    $newQuantity = (int)$allItems[$i]['quantity'] - (int)$cart[$j]['purchaseQuantity'];
+                    $allItems[$i]['quantity'] = (string)$newQuantity;
+                };
+            }
+        }
+
+        save_file($allItems);
+    }
+
+    function displayCart($cart)
+    {
         //iterate through cart
-        for($i=0; $i<count($cart); $i++){
+        for ($i = 0; $i < count($cart); $i++) {
             //contains item and purchase quantity
 
             //save item for ease of use
             $item = $cart[$i]['item'];
 
             //printing out name
+            echo "Item Name: ";
             echo $item['name'];
+            echo "<br />";
             //creating img
-            echo "<img src='{$item['imageLocation']}' alt='{$item['name']}' style='max-width: 200px;'>";
+            echo "<img class='cart-image' src='{$item['imageLocation']}' alt='{$item['name']}'>";
 
             //printing out purchase quantity
+            echo "Quantity: ";
             echo $cart[$i]['purchaseQuantity'];
+            echo '      Price: $';
+            echo $cart[$i]['item']['price'];
+            echo "<form method='post' action=''><input type='hidden' name='remove' value='{$i}'><input class='remove-from-cart' type='submit' value='Remove from cart'></form>";
+            echo "<br/>";
+            echo "<br/>";
         }
     }
